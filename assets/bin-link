@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+${MAIN_PATH} $@
