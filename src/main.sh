@@ -4,12 +4,14 @@ PAK_MAIN="${BASH_SOURCE[0]}"
 PAK_ROOT=$(dirname "$PAK_MAIN")
 
 source "${PAK_ROOT}/commands/build.sh"
+source "${PAK_ROOT}/commands/signing.sh"
 
 function main {
     command="${1:-"help"}"
     args="${@:2}"
     case "$command" in
         build) build-command ;;
+        create-signature) create-signature-command ;;
         help) help-command ;;
         *) unknown-command "$command" ;;
     esac

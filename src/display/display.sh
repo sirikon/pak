@@ -12,7 +12,7 @@ REGULAR="\e[0m"
 RESET="${WHITE}${REGULAR}"
 
 function log-title {
-    printf "${CYAN}${BOLD}%s${RESET}\n" "$1"
+    printf "${CYAN}${BOLD}:: %s${RESET}\n" "$1"
 }
 
 function log-error {
