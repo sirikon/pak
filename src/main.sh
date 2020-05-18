@@ -11,7 +11,7 @@ function main {
     args="${@:2}"
     case "$command" in
         build) build-command ;;
-        create-signature) create-signature-command ;;
+        create-cert) create-cert-command ;;
         help) help-command ;;
         *) unknown-command "$command" ;;
     esac
